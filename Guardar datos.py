@@ -19,5 +19,3 @@ df['Escala temp'] = esc_temp
 df['Escala corriente'] = esc_corr
 df['Tiempo integracion'] = pd.Series([t_integracion],index = [0])
 df['Tiempo'] = pd.Series([time.ctime()],index = [0])
-
-df.to_csv(rf'Barrido {l_onda}nm - V[{v_min}-{v_max}].csv')
